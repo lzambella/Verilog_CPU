@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CPU_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CPU" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="735220000fs"></ZoomStartTime>
+      <ZoomEndTime time="1144958175fs"></ZoomEndTime>
+      <Cursor1Time time="798116000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/CPU/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/STATE" type="array">
+      <obj_property name="ElementShortName">STATE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/INSTR" type="array">
+      <obj_property name="ElementShortName">INSTR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INSTR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/CTRL_OUT" type="array">
+      <obj_property name="ElementShortName">CTRL_OUT[9:0]</obj_property>
+      <obj_property name="ObjectShortName">CTRL_OUT[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/reg_data_a" type="array">
+      <obj_property name="ElementShortName">reg_data_a[63:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_a[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/mux_alusrc_pass" type="array">
+      <obj_property name="ElementShortName">mux_alusrc_pass[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_alusrc_pass[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/writeback_res" type="array">
+      <obj_property name="ElementShortName">writeback_res[63:0]</obj_property>
+      <obj_property name="ObjectShortName">writeback_res[63:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/cbz_addr" type="array">
+      <obj_property name="ElementShortName">cbz_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cbz_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/b_addr" type="array">
+      <obj_property name="ElementShortName">b_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CPU/conditional_zero" type="logic">
+      <obj_property name="ElementShortName">conditional_zero</obj_property>
+      <obj_property name="ObjectShortName">conditional_zero</obj_property>
+   </wvobject>
+</wave_config>

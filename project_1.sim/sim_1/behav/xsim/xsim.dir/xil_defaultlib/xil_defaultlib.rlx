@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v,1545856504,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v,,ALU,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v,1545963091,verilog,,,,CPU,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v,1545788118,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v,,DATA_MEM,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v,1542330887,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v,,DATA_MUX,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v,1545963497,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v,,INSTR_MEM,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v,1542312039,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v,,REGLOC_MUX,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v,1545945468,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v,,REG_MEM,,,,,,,,
+C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v,1544122985,verilog,,C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v,,SIGN_EXTEND,,,,,,,,

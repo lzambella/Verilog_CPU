@@ -1,0 +1,2834 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec 27 14:38:37 2018
+# Process ID: 2556
+# Current directory: C:/Users/Admin/Documents/ARM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10928 C:\Users\Admin\Documents\ARM\project_1.xpr
+# Log file: C:/Users/Admin/Documents/ARM/vivado.log
+# Journal file: C:/Users/Admin/Documents/ARM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Documents/ARM/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 793.809 ; gain = 91.992
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/xsim.dir/CPU_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/xsim.dir/CPU_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 27 14:39:21 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 27 14:39:21 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 796.156 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 818.324 ; gain = 22.168
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 840.500 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 846.148 ; gain = 5.648
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 847.016 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 859.406 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 43
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+ERROR: [VRFC 10-1412] syntax error near ; [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:208]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:207]
+ERROR: [VRFC 10-2787] module CPU ignored due to previous errors [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 43
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 861.043 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 193
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 197
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 201
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 205
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 209
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 209
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 210
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 205
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 210
+run all
+Stopped at time : 110 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 193
+run all
+Stopped at time : 130 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 197
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 201
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 43
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 193
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 870.957 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 197
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 201
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 43
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 205
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 193
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 197
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 201
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 205
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 210
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 43
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 43
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+WARNING: [VRFC 10-1783] select index 4 into enables is out of bounds [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 874.465 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+WARNING: [VRFC 10-1783] select index 4 into enables is out of bounds [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:145]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 874.465 ; gain = 0.000
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 876.145 ; gain = 1.680
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 876.145 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 110 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 130 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 170 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 190 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 210 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 230 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 250 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 270 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 290 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 310 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 330 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 350 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 370 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 390 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 410 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 490 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 510 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 530 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 550 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 211
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 212
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 211
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 881.352 ; gain = 0.000
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 212
+run all
+Stopped at time : 190 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 211
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 211
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 212
+run all
+run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:49 . Memory (MB): peak = 885.262 ; gain = 3.910
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 194
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 198
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 202
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 206
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 210
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 194
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 885.262 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 198
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 202
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 206
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 210
+run all
+Stopped at time : 110 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 194
+run all
+Stopped at time : 130 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 198
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 202
+run all
+Stopped at time : 170 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 206
+run all
+Stopped at time : 190 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 210
+run all
+Stopped at time : 210 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 194
+run all
+Stopped at time : 230 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 198
+run all
+Stopped at time : 250 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 202
+run all
+Stopped at time : 270 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 206
+run all
+Stopped at time : 290 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 210
+run all
+Stopped at time : 310 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 194
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 194
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 198
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 202
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 206
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 210
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 887.242 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 110 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 130 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 170 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 190 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 210 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 230 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 887.242 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 48
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 47
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 887.242 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 891.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 891.109 ; gain = 0.000
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+WARNING: Simulation object /CPU/counter was not found in the design.
+WARNING: Simulation object /CPU/alu_opcode was not found in the design.
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 892.438 ; gain = 0.219
+save_wave_config {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 906.863 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 126
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 126
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 125
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 126
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 906.863 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 122
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 906.863 ; gain = 0.000
+run all
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:135]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 906.863 ; gain = 0.000
+run all
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 490 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+run all
+Stopped at time : 510 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 122
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 122
+run all
+Stopped at time : 5170 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 125
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 125
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 126
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:136]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 906.863 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 906.863 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 906.863 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 906.863 ; gain = 0.000
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 120
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 10 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 906.863 ; gain = 0.000
+run all
+Stopped at time : 30 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 50 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 70 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 90 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 110 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 130 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 150 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 170 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 190 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 210 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 230 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 250 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 270 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 290 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 310 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 330 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 350 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 370 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 390 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 410 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 430 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 450 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 121
+run all
+Stopped at time : 470 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 490 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 510 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+run all
+Stopped at time : 530 ns : File "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" Line 120
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 120
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 918.582 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 935.613 ; gain = 17.031
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 936.797 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 936.797 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 936.797 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a12ticsg325-1L
+Top: CPU
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1036.594 ; gain = 99.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'INSTR_MEM' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'INSTR_MEM' (1#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'ADDR_IN' does not match port width (16) of module 'INSTR_MEM' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:134]
+INFO: [Synth 8-6157] synthesizing module 'REGLOC_MUX' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'REGLOC_MUX' (2#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v:28]
+INFO: [Synth 8-6157] synthesizing module 'REG_MEM' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'REG_MEM' (3#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v:27]
+INFO: [Synth 8-6157] synthesizing module 'DATA_MUX' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DATA_MUX' (4#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'DATA_MEM' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DATA_MEM' (6#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SIGN_EXTEND' [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SIGN_EXTEND' (7#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v:23]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:185]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (8#1) [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:23]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port CLK
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[31]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[30]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[29]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[28]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[27]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[26]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[25]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[24]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[23]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[22]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[21]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[11]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[10]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[9]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[8]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[7]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[6]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[5]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[4]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[3]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[2]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[1]
+WARNING: [Synth 8-3331] design SIGN_EXTEND has unconnected port INSTR_IN[0]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[63]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[62]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[61]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[60]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[59]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[58]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[57]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[56]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[55]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[54]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[53]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[52]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[51]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[50]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[49]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[48]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[47]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[46]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[45]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[44]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[43]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[42]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[41]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[40]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[39]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[38]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[37]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[36]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[35]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[34]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[33]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[32]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[31]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[30]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[29]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[28]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[27]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[26]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[25]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[24]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[23]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[22]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[21]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[20]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[19]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[18]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[17]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[16]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[15]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[14]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[13]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[12]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[11]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[10]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[9]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[8]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[7]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[6]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[5]
+WARNING: [Synth 8-3331] design DATA_MEM has unconnected port MEM_ADDR_IN[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.055 ; gain = 154.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.055 ; gain = 154.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.055 ; gain = 154.258
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1398.844 ; gain = 462.047
+22 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 1398.844 ; gain = 462.047
+run 10 us
+save_wave_config {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:113]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1403.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1403.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1403.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1403.465 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:02:52 ; elapsed = 00:02:54 . Memory (MB): peak = 1403.465 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1403.465 ; gain = 0.000
+run 1 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/DATA_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATA_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/INSTR_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INSTR_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REGLOC_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REGLOC_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/SIGN_EXTEND.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIGN_EXTEND
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b4c0e3fa1e424aef84b8eb3402590b37 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_behav xil_defaultlib.CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port ADDR_IN [C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INSTR_MEM
+Compiling module xil_defaultlib.REGLOC_MUX
+Compiling module xil_defaultlib.REG_MEM
+Compiling module xil_defaultlib.DATA_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DATA_MEM
+Compiling module xil_defaultlib.SIGN_EXTEND
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Admin/Documents/ARM/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_behav -key {Behavioral:sim_1:Functional:CPU} -tclbatch {CPU.tcl} -view {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1403.465 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project 8bit_Multiplier C:/Users/Admin/Documents/8bit_Multiplier -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1403.465 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 28 13:24:01 2018...

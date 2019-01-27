@@ -1,0 +1,330 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec 27 14:38:37 2018
+# Process ID: 2556
+# Current directory: C:/Users/Admin/Documents/ARM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10928 C:\Users\Admin\Documents\ARM\project_1.xpr
+# Log file: C:/Users/Admin/Documents/ARM/vivado.log
+# Journal file: C:/Users/Admin/Documents/ARM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Admin/Documents/ARM/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 43
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 193
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 197
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 201
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 205
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 209
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 209
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 210
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 193
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 197
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 201
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 205
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 210
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 43
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 211
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 212
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 211
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 212
+run all
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 194
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 198
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 202
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 206
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 210
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 47
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 194
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 198
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 202
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 206
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 210
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 47
+run all
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} 48
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/REG_MEM.v} -line 48
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+save_wave_config {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 126
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 126
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 125
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 126
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 122
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+run all
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 122
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 125
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 126
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 120
+add_bp {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} 121
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 120
+remove_bps -file {C:/Users/Admin/Documents/ARM/project_1.srcs/sources_1/new/CPU.v} -line 121
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+synth_design -rtl -name rtl_1
+run 10 us
+save_wave_config {C:/Users/Admin/Documents/ARM/CPU_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run 1 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/Admin/Documents/ARM/CPU_behav.wcfg
+source CPU.tcl
+run all
+close_sim
+close_project
+create_project 8bit_Multiplier C:/Users/Admin/Documents/8bit_Multiplier -part xc7k70tfbv676-1
